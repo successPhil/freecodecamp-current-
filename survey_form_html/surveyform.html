@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Survey Form</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href=styles.css>
+  </head>
+  <body>
+    <h1 id="title">Free Code Camp Survey Form</h1>
+    <p id="description">How much have you learned from Free Code Camp?</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name <input id="name" type="text" name="name" placeholder="Enter your name" required></label>
+        
+        <label id="email-label" for="email">Enter your email <input id="email" type="email" name="email" placeholder="Enter your email"required></label>
+        
+        <label id="number-label" for="number">Age(Optional) <input id="number" type="number" min="13" max="120" placeholder="Age" name="age"></label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">How often do you code?
+          <select id="dropdown" name="coding">
+            <option value="0">Please select an option</option>
+            <option value="1">A few times a week</option>
+            <option value="2">Almost every day</option>
+            <option value="3">I code more than most people work</option>
+      </fieldset>
+      <fieldset>
+        <label id="male-label" for="male"> <input type="radio" class="inline" id="male" name="gender" value="1">Male</label>
+        <label id="female-label" for="female"> <input type="radio" id="female" class="inline" name="gender" value="2">Female</label>
+        <label id="other-label" for="other"> <input type="radio" id="other" class="inline" name="gender" value="3">Prefer not to disclose</label>
+      </fieldset>
+      <fieldset>
+        <fieldset>
+          <label id="practice1-label" for="practice1">How do you like to practice? </label>
+          <input id="practice1" type="checkbox" value="1" class="inline">Following tutorials<br>
+          <label id="practice2-label" for="practice2"</label>
+          <input id="practice2" type="checkbox" value="2" class="inline">greater than 6 months<br>
+          <label id="practice3-label" for="practice3"</label>
+          <input id="practice3" type="checkbox" value="3" class="inline">more than 1 year<br>
+        </fieldset>
+        <label id="comments-label" for="comments">Comment below <textarea id="comments" name="commentsarea" rows="3" cols="30" placeholder="Enter comments here"></textarea>
+      </fieldset>
+<input type="submit" id="submit">
+    </form>
+    </body>  
+</html>
