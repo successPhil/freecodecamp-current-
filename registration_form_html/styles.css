@@ -1,45 +1,66 @@
-h1 {
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #1b1b32;
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px
+}
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+h1, p {
+  margin: 1em auto;
   text-align: center;
 }
-
-.marker {
+form {
+  margin: 0 auto;
+  max-width: 500px;
+  min-width: 300px;
+  width: 60vw;
+  padding-bottom: 2em;
+}
+fieldset{
+  border: 0;
+  padding: 2rem 0; /*pads top/bot removes left/right*/
+  border-bottom: 3px solid #3b3b4f
+}
+fieldset:last-of-type { /*targets last fieldset item*/
+  border-bottom: none;
+}
+input,
+textarea,
+select {
+margin: 10px 0 0 0; /*10px top, rest 0*/
+width: 100%; /*100% width of parent*/
+min-height: 2em
+}
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
   
-  height: 25px;
-  width: 200px;
-  margin: 10px auto;
 }
-
-.red {
-  background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
-  box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8)
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
 }
-.green {
-  background: linear-gradient(#55680D, #71F53E, #116C31);
-  box-shadow: 0 0 20px 0 #3B7E20CC;
+input[type="file"] {
+  padding: 1px 2px;
 }
-
-.blue {
-  background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
-  box-shadow: 0 0 20px 0 hsl(223, 59%, 31%, 0.8);
-}
-.gradient {
-  background: linear-gradient(90deg, rgb(255, 0, 255) 15%, rgb(0, 255, 255)60%, rgb(255, 255, 0)80%);
-  
-}
-.container {
-  background-color: rgb(0, 0, 0);
-  padding: 10px 0;
-}
-.sleeve {
-  width: 110px;
-  height: 25px;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-left: 10px double rgba(0,0,0,0.75);
-}
-.cap {
-  width: 60px;
-  height: 25px;
-}
-.cap, .sleeve {
-  display: inline-block;
+a {
+  color: #dfdfe2
 }
